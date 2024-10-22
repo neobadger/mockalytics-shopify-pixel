@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mockalytics | Shopify Pixel Environment Mocker</title>
+    <style>
+      /* Import NEOBADGER Fonts */
+      @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(
+          45deg,
+          #f6d365,
+          #fda085,
+          #a1c4fd,
+          #c2e9fb,
+          #ff9a9e
+        );
+        background-size: 300% 300%;
+        animation: gradientBackground 15s ease infinite;
+        color: #fff;
+      }
+
+      @keyframes gradientBackground {
+        0% {
+          background-position: 0% 50%;
+        }
+        25% {
+          background-position: 50% 100%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        75% {
+          background-position: 50% 0%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-family: 'Questrial', sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      h2 {
+        font-weight: 100;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 10px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 0.9rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mockalytics</h1>
+      <h2>Shopify Pixel Environment Mocker</h2>
+    </div>
+    <p class="footer">NEOBADGER</p>
+    <script type="module" src="./tests.js"></script>
+  </body>
+</html>
